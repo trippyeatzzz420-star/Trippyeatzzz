@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trippyeatzzz</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff6ec7, #6e6eff, #00ffcc);
+      background-size: 600% 600%;
+      animation: gradient 15s ease infinite;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 20vh;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Trippyeatzzz 🌌</h1>
+  <p>This is your first GitHub Pages site.</p>
+</body>
+</html>
