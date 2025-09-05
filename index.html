@@ -3,34 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trippyeatzzz</title>
+  <title>Trippyeatzzz Bakery</title>
   <style>
     body {
-      background: linear-gradient(135deg, #ff6ec7, #6e6eff, #00ffcc);
-      background-size: 600% 600%;
-      animation: gradient 15s ease infinite;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: white;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff8f0;
+      color: #333;
     }
-    h1 {
-      font-size: 3em;
-      margin-top: 20vh;
+    header {
+      background: linear-gradient(135deg, #ff8a8a, #ffcc70);
+      color: white;
+      text-align: center;
+      padding: 2rem;
     }
-    p {
-      font-size: 1.2em;
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
     }
-    @keyframes gradient {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+    nav {
+      background: #ffb347;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #fff3e6;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+    .menu-item {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .menu-item img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #ff8a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Trippyeatzzz 🌌</h1>
-  <p>This is your first GitHub Pages site.</p>
+
+  <header>
+    <h1>Trippyeatzzz Bakery</h1>
+    <p>Sweet treats made with love 🍰✨</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Freshly Baked Daily</h2>
+    <p>From cupcakes to breads, everything is homemade and delicious.</p>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="menu-item">
+      <img src="https://source.unsplash.com/200x200/?cupcake" alt="Cupcake">
+      <h3>Cupcakes</h3>
+      <p>Fluffy and sweet, available in many flavors.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://source.unsplash.com/200x200/?bread" alt="Bread">
+      <h3>Fresh Bread</h3>
+      <p>Golden crust, soft inside—perfect every time.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://source.unsplash.com/200x200/?cookies" alt="Cookies">
+      <h3>Cookies</h3>
+      <p>Chewy, gooey, and packed with flavor.</p>
+    </div>
+  </section>
+
+  <section id="about" style="padding:2rem; text-align:center;">
+    <h2>About Us</h2>
+    <p>At Trippyeatzzz, we believe baking is an art. Every treat is made with passion, creativity, and love for our community.</p>
+  </section>
+
+  <section id="contact" style="padding:2rem; text-align:center;">
+    <h2>Contact</h2>
+    <p>Email us at: <a href="mailto:trippyeatzzz@gmail.com">trippyeatzzz@gmail.com</a></p>
+    <p>Follow us on Instagram: <a href="#">@trippyeatzzz</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Trippyeatzzz Bakery. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
